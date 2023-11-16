@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: "Poppins", sans-serif;
+  
+}
+
+p{
+    font-family: "Roboto", sans-serif;
+    line-height: 1.4rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+ 
+.container{
+    margin-inline: auto ;
+    overflow: hidden ;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main{
+    padding-block: 20px;
+    margin-top: 50px; 
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1052px) 
+ {
+    .card {
+        margin: auto; 
+    }
+   
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        padding-block: 10px;
+        margin-top: 80px;
+    }
+    .flex{
+    flex-direction: row;
+   } 
+   .card{
+    margin-right: 25px;
+    margin-left: 25px;
+   }
+  
+.footer{
+    padding: 0;
+}
+
+}
+
+
+.cards-container{
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: gold;
+}
+
+.card{
+    width: 350px;
+    min-height: 400px;
+    box-shadow:  0 0 4px #d4ecff;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    margin: auto;
+}
+
+.card:hover{
+    box-shadow: 1 px 1px 8px #d4ecff;
+    background-color: #f9fdff;
+    transform: translateY(-2px);
+}
+
+
+
+.card-content{
+    padding: 15px;
+    text-align: center;
+}
+
+.news-desc{
+    text-align: left;
+}
+
+
+.price-box {
+    background-color: #eaf4fce1; 
+    border: 1px solid #ddd; 
+    padding: 20px;
+    margin: 25px;
+}
+
+.price {
+    font-size: 40px;
+    font-weight: bold;
+    color: #333; 
+    padding: 1rem;
+}
+
+.inclusive-text {
+    font-size: 14px;
+    color: #777; 
+}
+
+.know-more{
+    padding-top: 100px;
+}
+
+
+.icons a {
+    text-decoration: none;
+    color: #120404;
+}
+
+.icons ion-icon {
+    color: #100202;
+    font-size: 25px;
+    padding-left: 10px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+}
+
+.icons ion-icon:hover {
+    color:white;
+}
+
+.footer{
+    background-color: gold;
+    padding: 8px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
